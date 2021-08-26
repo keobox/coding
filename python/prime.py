@@ -13,7 +13,7 @@ def get_primes(n):
     """Use sieve of Eratosthenes"""
     if n <= 1:
         return []
-    nums = range(2, n + 1)
+    nums = range(2, n)
     i = 0
     while i < len(nums):
         erasing = nums[i]
