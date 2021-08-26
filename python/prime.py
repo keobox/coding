@@ -48,5 +48,5 @@ if __name__ == "__main__":
     for i in get_primes(48):
         print(i)
     print()
-    perf_test(100000)
+    perf_test(100_000)
 
