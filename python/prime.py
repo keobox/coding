@@ -41,11 +41,11 @@ def perf_test(n):
     print(end - start)
 
 if __name__ == "__main__":
-    for i in range(47):
+    for i in range(48):
         if is_prime(i):
             print(i)
     print()
-    for i in get_primes(47):
+    for i in get_primes(48):
         print(i)
     print()
     perf_test(100000)
