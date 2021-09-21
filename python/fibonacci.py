@@ -1,7 +1,8 @@
-"Fibonacci series: print first n numbers"
+"""Fibonacci series: print first n numbers"""
+
 
 def fib(n):
-    "Iterative"
+    """Iterative"""
     if n == 0 or n == 1:
         print(n)
     else:
@@ -13,12 +14,14 @@ def fib(n):
             a = b
             b = temp
 
+
 def fib_r(n):
-    "Recursive, but slow"
+    """Recursive, but slow"""
     if n == 0 or n == 1:
         return n
     else:
         return fib_r(n - 1) + fib_r(n - 2)
+
 
 if __name__ == "__main__":
     n = 10
