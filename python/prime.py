@@ -19,11 +19,14 @@ def get_primes(n):
         return []
     nums = range(2, n)
     max_sieve = math.sqrt(n)
+    print(max_sieve)
     i = 0
     while i < max_sieve:
         erasing = nums[i]
         nums = [x for x in nums if x == erasing or x % erasing]
         i += 1
+        if i % 1000 == 0:
+            print(i)
     return nums
 
 
@@ -57,4 +60,4 @@ if __name__ == "__main__":
     for i in get_primes(48):
         print(i)
     print()
-    perf_test(100_000)
+    perf_test(10_000_000)
